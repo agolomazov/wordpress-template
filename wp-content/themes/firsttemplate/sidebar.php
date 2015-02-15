@@ -15,7 +15,6 @@
     <?php if(!dynamic_sidebar('sidebar')): ?>
         <span>Добавьте сюда свое меню</span>
     <?php endif; ?>
-    
     <div class="sidebar-widget">
         <div class="facebook">
             <img src="<?php echo bloginfo('template_url') ?>/images/facebook.jpg" alt="" />
