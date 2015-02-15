@@ -2,15 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
-    <script src="js/jqFancyTransitions.1.8.min.js" type="text/javascript"></script>
-    <script>
-        $(document).ready( function(){
-            $('#slideshowHolder').jqFancyTransitions({ navigation: true, width: 594, height: 279 });
-        });
-    </script>
     <title>Тема WordPress для блога</title>
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -252,5 +245,11 @@
     <p class="copy">Copyright © 2010 All Rights Reserved</p>
     <p class="by-st">Designed by <a href="#">GraphicsFuel.com</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Powered by <a href="#">Wordpress</a></p>
 </div>
+<?php wp_footer(); ?>
+<script>
+    $(document).ready( function(){
+        $('#slideshowHolder').jqFancyTransitions({ navigation: true, width: 594, height: 279 });
+    });
+</script>
 </body>
 </html>
