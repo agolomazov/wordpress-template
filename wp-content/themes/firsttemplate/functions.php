@@ -21,3 +21,16 @@ function load_styles(){
 
 add_action('wp_footer', 'load_script');
 add_action('wp_head', 'load_styles');
+
+/**
+ *  Добавление поддержки виджетов в шаблоне
+ */
+
+register_sidebar(array(
+    'name' => 'Меню',
+    'id'   => 'menu_header',
+    'before_title' => '',
+    'after_title' => '',
+    'before_widget' => '',
+    'after_widget' => '',
+));

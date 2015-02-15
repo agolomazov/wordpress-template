@@ -15,14 +15,9 @@
 </div>
 <div class="menu-wrapper">
     <div class="menu-main">
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Design Services</a></li>
-            <li><a href="#">Request Quote</a></li>
-            <li><a href="#">Advertise</a></li>
-            <li><a href="#">Contact Me</a></li>
-        </ul>
+        <?php if(!dynamic_sidebar('menu_header')): ?>
+            <span>Добавьте сюда свое меню</span>
+        <?php endif; ?>
         <ul class="ico-social">
             <li><a href="#"><img src="<?php echo bloginfo('template_url') ?>/images/ico-vk.png" alt="мы вконтакте" /></a></li>
             <li><a href="#"><img src="<?php echo bloginfo('template_url') ?>/images/ico-youtobe.png" alt="канал youtobe" /></a></li>
