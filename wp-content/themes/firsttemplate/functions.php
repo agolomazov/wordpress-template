@@ -51,3 +51,12 @@ register_sidebar(array(
     'before_widget' => '',
     'after_widget' => '',
 ));
+
+register_sidebar(array(
+    'name' => 'Сайдбар',
+    'id'   => 'sidebar',
+    'before_widget' => '<div class="sidebar-widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+));

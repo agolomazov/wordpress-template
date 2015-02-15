@@ -233,3 +233,17 @@ a.prev-next{
 .ft-button-slideshowHolder-active{
     background:#e6e6e6; color:#373737;
 }
+
+.widget_categories, .widget_recent_entries{
+    margin: 20px 0 40px;
+}
+
+.widget_categories li, .widget_recent_entries li{
+    float: left;
+    margin: 5px 0;
+    width: 50%;
+}
+
+.widget_recent_entries li{
+    width: 100%;
+}
