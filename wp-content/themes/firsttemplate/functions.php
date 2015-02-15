@@ -16,11 +16,28 @@ function load_styles(){
 }
 
 /**
+ *  Функция вместо [...] устанавливает ... при обрезке текста поста
+ *  при выводе его в списке
+ *
+ * @param $more
+ * @return string
+ */
+function new_excerpt_more($more) {
+    return '...';
+}
+
+/**
  *  Загружаем скрипты и стили
  */
 
 add_action('wp_footer', 'load_script');
 add_action('wp_head', 'load_styles');
+add_filter('excerpt_more', 'new_excerpt_more');
+
+// Включаем поддержку миниатюр
+add_theme_support( 'post-thumbnails' );
+// Устанавливаем размер миниатюр по умолчанию
+set_post_thumbnail_size( 180, 180 );
 
 /**
  *  Добавление поддержки виджетов в шаблоне
