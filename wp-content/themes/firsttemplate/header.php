@@ -9,7 +9,9 @@
 <body>
 <div class="head-wrapper">
     <div class="head">
-        <div class="head-logo"><img src="<?php echo bloginfo('template_url') ?>/images/logo.jpg" alt="" /></div>
+        <div class="head-logo">
+            <a href="/"><img src="<?php echo bloginfo('template_url') ?>/images/logo.jpg" alt="" /></a>
+        </div>
         <div class="head-banner"><img src="<?php echo bloginfo('template_url') ?>/images/728x90.jpg" alt="" /></div>
     </div>
 </div>
